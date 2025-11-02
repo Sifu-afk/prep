@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1761908267959,
+      "tag": "0000_tricky_living_tribunal",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1761995579813,
+      "tag": "0001_volatile_switch",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1761997271628,
+      "tag": "0002_tearful_black_panther",
+      "breakpoints": true
+    }
+  ]
+}
