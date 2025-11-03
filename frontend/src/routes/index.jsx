@@ -4,7 +4,7 @@ import Layout from "../ui/components/layout/layout.jsx";
 import Landing from "../ui/pages/Landing";
 import Login from "../ui/pages/Login";
 import Register from "../ui/pages/Register";
-import Event from "../ui/pages/event.jsx";
+import Event from "../ui/pages/Event.jsx";
 import Profile from "../ui/pages/Profile.jsx";
 
 export const routes = [

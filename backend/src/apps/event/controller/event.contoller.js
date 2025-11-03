@@ -10,11 +10,19 @@ import {
 export const eventController = {
   async event(req, res) {
     try {
-      const { title, content } = req.body;
+      const { title, content, category, address, image, date } = req.body;
 
       const userId = req.user.id;
 
-      const newEvent = await createEvent({ title, content, userId });
+      const newEvent = await createEvent({
+        title,
+        content,
+        userId,
+        category,
+        address,
+        image,
+        date,
+      });
 
       res.status(201).json({
         success: true,
@@ -48,7 +56,7 @@ export const eventController = {
   async updateEvent(req, res) {
     try {
       const { id } = req.params;
-      const { title, content } = req.body;
+      const { title, content, category, address, date } = req.body;
 
       // Fetch the event first
       const existing = await db.select().from(event).where(eq(event.id, id));
@@ -63,7 +71,7 @@ export const eventController = {
 
       const updated = await db
         .update(event)
-        .set({ title, content })
+        .set({ title, content, category, address, date })
         .where(eq(event.id, id))
         .returning();
 

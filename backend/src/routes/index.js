@@ -8,4 +8,5 @@ router.use("/auth", authRoutes);
 
 router.use("/event", eventRoutes);
 
+
 export default router;

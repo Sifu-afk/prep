@@ -1,3 +1,4 @@
+import { sql } from "drizzle-orm";
 import { sqliteTable, text, integer } from "drizzle-orm/sqlite-core";
 
 export const users = sqliteTable("users", {
@@ -13,4 +14,8 @@ export const event = sqliteTable("event", {
   userId: integer("user_id").notNull(),
   title: text("title").notNull(),
   content: text("content").notNull(),
+  category: text("category").notNull(),
+  address: text("address").notNull(),
+  image: text("image").notNull(),
+  date: text("date").notNull(),
 });
